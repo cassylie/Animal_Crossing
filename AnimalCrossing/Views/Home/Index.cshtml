@@ -1,12 +1,50 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
+<br /><br /><br />
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
 
-<div class="jumbotron">
-    <img src="~/animal-crossing-de-nouveaux-changements-pour-le-mois-de-novembre-grande.jpg" />
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="~/animal-crossing-de-nouveaux-changements-pour-le-mois-de-novembre-grande.jpg" />
+            <div class="carousel-caption">
+                <h3>L'apparition de l'automne sur Animal Crossing</h3>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="~/banniere2.jpg" />
+        </div>
+
+        <div class="item">
+            <img src="~/banniere3.jpg" />
+        </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
 </div>
-
-<div class="row cadre" >
+<br />
+<div class="alert alert-success container-fluid">
+<strong>Info! </strong>Mise à jour de la page d'accueil, prévu pour le mois de décembre. La page suit les mises à jour lancées par Nintendo
+</div>
+<br />
+<br />
+<div class="container-fluid row cadre">
     <div class="col-md-4 fiche">
         <h2>Quoi de neuf, en novembre? 🍂</h2>
         <p>
@@ -62,12 +100,12 @@
         <h2>Laissez goût à votre imagination 💭</h2>
         <p>
             Durant le mois de novembre, vous aurez l'occasion d'obtenir de nouveaux plans de bricolage.
-            Amusez vous à construire de nouveaux meubles et décorez votre île, dans le ton automnale! 
+            Amusez vous à construire de nouveaux meubles et décorez votre île, dans le ton automnale!
             <img src="~/Champignons-dans-Animal-Crossing-New-Horizons-678x370.jpg" />
             Ramassez des champignons, attrapez des feuilles d'érables ou secouez les arbres pour les glands et pommes de pins,
             pour obtenir différentes ressources pour fabriquer vos meubles!
 
         </p>
-       
+
     </div>
 </div>

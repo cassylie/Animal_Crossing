@@ -13,7 +13,5 @@ namespace AnimalCrossing.Models
         public string personnalite { get; set; }
         public string genre { get; set; }
 
-
-        public virtual ICollection<Enrollment> Enrollments { get; set; }
     }
 }

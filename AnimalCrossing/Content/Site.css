@@ -1,8 +1,6 @@
 ﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
     color: black;
-    background-image: url('../../1582299171-4284-card.jpg');
+    background-image: url('../animal_crossing_fruit_pattern_by_fennellsdesign_da3ubpk-fullview.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -31,6 +29,7 @@ h2{
     color: orangered;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
+    font-size: xx-large;
 }
 p{
     text-align: justify;
@@ -45,7 +44,7 @@ p{
 .fiche{
    
     margin: unset;
-    height: 800px;
+    height: 900px;
 }
 .cadre{
     background-color: antiquewhite;
@@ -81,10 +80,35 @@ th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: center;
-    background-color: lightgreen;
+    background-color: lightsalmon;
     color: black;
 }
 .gestion{
     color: chocolate;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.jumbotron {
+    background-color: lightsalmon;
+    color: #fff;
+}
+h4{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: chocolate;
+    text-align: center;
+    font-size: x-large;
+}
+.titre1{
+    color: ghostwhite;
+    font-family: 'Century Schoolbook';
+    font-size: xx-large;
+}
+.img{
+    text-align: center;
+}
+
+h3 {
+    color: forestgreen;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: x-large;
 }

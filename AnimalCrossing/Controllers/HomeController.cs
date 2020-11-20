@@ -36,6 +36,16 @@ namespace AnimalCrossing.Controllers
             return View("Connexion");
         }
 
+        public ActionResult ShowCelebreView()
+        {
+            return View("Celebre");
+        }
+
+        public ActionResult ShowMAJView()
+        {
+            return View("MAJ");
+        }
+
 
 
     }

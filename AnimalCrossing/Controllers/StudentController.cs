@@ -47,7 +47,7 @@ namespace AnimalCrossing.Controllers
         // plus de détails, consultez https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,LastName,FirstMidName,EnrollmentDate")] Student student)
+        public ActionResult Create([Bind(Include = "ID,nomhabitant,espece,personnalite,genre")] Student student)
         {
             if (ModelState.IsValid)
             {
@@ -79,7 +79,7 @@ namespace AnimalCrossing.Controllers
         // plus de détails, consultez https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,LastName,FirstMidName,EnrollmentDate")] Student student)
+        public ActionResult Edit([Bind(Include = "ID,nomhabitant,espece,personnalite,genre")] Student student)
         {
             if (ModelState.IsValid)
             {
