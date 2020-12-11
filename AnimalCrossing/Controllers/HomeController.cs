@@ -45,6 +45,10 @@ namespace AnimalCrossing.Controllers
         {
             return View("MAJ");
         }
+        public ActionResult ShowTransfertView()
+        {
+            return View("Transfert");
+        }
 
 
 

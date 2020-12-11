@@ -23,5 +23,7 @@ namespace AnimalCrossing.DAL
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
         }
+
+        public System.Data.Entity.DbSet<AnimalCrossing.Models.Utilisateur> Utilisateurs { get; set; }
     }
 }

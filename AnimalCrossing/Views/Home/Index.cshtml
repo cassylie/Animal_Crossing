@@ -1,7 +1,6 @@
-﻿@{
-    ViewBag.Title = "Home Page";
-}
-<br /><br /><br />
+﻿<br />
+<br />
+<br />
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -39,9 +38,8 @@
     </a>
 </div>
 <br />
-<div class="alert alert-success container-fluid">
-<strong>Info! </strong>Mise à jour de la page d'accueil, prévu pour le mois de décembre. La page suit les mises à jour lancées par Nintendo
-</div>
+@if (Session["Email"] != null)
+{<p>Bonjour @Session["Pseudo"]. Vous êtes actuellement connecté en tant que compte modérateur </p>}
 <br />
 <br />
 <div class="container-fluid row cadre">
@@ -109,3 +107,4 @@
 
     </div>
 </div>
+

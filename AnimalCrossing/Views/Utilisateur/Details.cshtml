@@ -1,0 +1,66 @@
+﻿@model AnimalCrossing.Models.Utilisateur
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Utilisateur</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.pseudo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pseudo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.mdp)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.mdp)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ile)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ile)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.hemisphere)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.hemisphere)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fruit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fruit)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

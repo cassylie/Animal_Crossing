@@ -124,5 +124,9 @@ namespace AnimalCrossing.Controllers
             }
             base.Dispose(disposing);
         }
+        public ActionResult Affichage()
+        {
+            return View(db.Students.ToList());
+        }
     }
 }

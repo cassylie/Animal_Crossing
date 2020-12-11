@@ -1,0 +1,45 @@
+﻿@model IEnumerable<AnimalCrossing.Models.Student>
+
+@{
+    ViewBag.Title = "Liste des habitants";
+}
+<h2>Index</h2>
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.nomhabitant)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.espece)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.personnalite)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.genre)
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.nomhabitant)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.espece)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.personnalite)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.genre)
+            </td>
+        </tr>
+    }
+
+</table>
