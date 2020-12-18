@@ -3,10 +3,14 @@
 @{
     ViewBag.Title = "Liste des habitants";
 }
-<h2>Index</h2>
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
+<br /><br /><br /><br />
+    <div class="jumbotron text-center">
+        <h1>Liste des villageois</h1>
+        <h4>Cliquez sur 
+            @Html.ActionLink("Create New", "Create")
+        pour ajouter un nouveau villageoi dans la liste
+        </h4>
+    </div>
 
 <table class="table">
     <tr>
@@ -22,7 +26,7 @@
         <th>
             @Html.DisplayNameFor(model => model.genre)
         </th>
-        <th></th>
+        <th>Fonctionnalitées</th>
     </tr>
 
 @foreach (var item in Model) {

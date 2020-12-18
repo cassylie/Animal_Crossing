@@ -14,6 +14,7 @@ namespace AnimalCrossing.Models
         public string ile { get; set; }
         public string hemisphere { get; set; }
         public string fruit { get; set; }
+        public string statut { get; set; }
 
     }
 }

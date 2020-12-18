@@ -39,10 +39,11 @@
                     <li>@Html.ActionLink("Villageois", "Index", "Student")</li>
                     <li>@Html.ActionLink("Utilisateurs", "Index", "Utilisateur")</li>
                     <li>@Html.ActionLink("Profil", "ShowAccueilView", "Login")</li>
-            
+                    <li>@Html.ActionLink("Evenements", "ShoweveView", "Login")</li>
+
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li>@Html.ActionLink("Connexion", "Index", "Login")</li>
+                    <li>@Html.ActionLink("Déconnexion", "Deco", "Login", new { area = "" }, new { @class = "navbar-brand" })</li>
                 </ul>
             </div>
         </nav>

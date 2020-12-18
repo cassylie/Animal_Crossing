@@ -373,6 +373,7 @@
     <Content Include="FrontEnd\vendor\font-awesome\fonts\FontAwesome.otf" />
     <Content Include="FrontEnd\vendor\jquery.cookie\component.json" />
     <Content Include="FrontEnd\vendor\jquery.cookie\cookie.jquery.json" />
+    <Content Include="yetiti.jpg" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -424,6 +425,7 @@
     <Content Include="Views\Login\Index.cshtml" />
     <Content Include="Views\Login\Accueil.cshtml" />
     <Content Include="Views\Login\Profil.cshtml" />
+    <Content Include="Views\Login\Evenement.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -45,5 +45,15 @@ namespace AnimalCrossing.Controllers
             Session.Abandon();
             return RedirectToAction("Index", "Home");
         }
+
+        public ActionResult ShowAccueilView()
+        {
+            return View("Accueil");
+        }
+
+        public ActionResult ShoweveView()
+        {
+            return View("Evenement");
+        }
     }
 }

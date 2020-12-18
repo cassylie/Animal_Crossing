@@ -47,7 +47,7 @@ namespace AnimalCrossing.Controllers
         // plus de détails, consultez https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,pseudo,email,mdp,ile,hemisphere,fruit")] Utilisateur utilisateur)
+        public ActionResult Create([Bind(Include = "ID,pseudo,email,mdp,ile,hemisphere,fruit,statut")] Utilisateur utilisateur)
         {
             if (ModelState.IsValid)
             {
@@ -79,7 +79,7 @@ namespace AnimalCrossing.Controllers
         // plus de détails, consultez https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,pseudo,email,mdp,ile,hemisphere,fruit")] Utilisateur utilisateur)
+        public ActionResult Edit([Bind(Include = "ID,pseudo,email,mdp,ile,hemisphere,fruit,statut")] Utilisateur utilisateur)
         {
             if (ModelState.IsValid)
             {
