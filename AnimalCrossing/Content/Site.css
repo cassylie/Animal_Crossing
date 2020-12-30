@@ -108,9 +108,14 @@ h4{
     font-size: x-large;
 }
 .titre1{
-    color: ghostwhite;
+    color: white;
     font-family: 'Century Schoolbook';
     font-size: xx-large;
+    border-style: outset;
+    border-color: darkgreen;
+    background-color: darkseagreen;
+    border-radius: 10px;
+    box-shadow: initial;
 }
 .img{
     text-align: center;
