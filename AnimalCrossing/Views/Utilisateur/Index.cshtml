@@ -10,13 +10,19 @@
 <br />
 <div class="jumbotron text-center">
     <h1>Liste des collaborateurs du site web</h1>
-    <h4>
-        Cliquez sur
-        @Html.ActionLink("Create New", "Create")
-        pour ajouter un nouvel utilisateur dans la liste
+    <h4 class="text-center">
+        @using (Html.BeginForm())
+        {
+            @Html.TextBox("SearchString", null, new { @class = "form-control center-block", @placeholder = "Recherche" })<br />
+            <input type="submit" class="btn" value="Recherche">
+        }
     </h4>
 </div>
-
+<h4>
+    Cliquez sur
+    @Html.ActionLink("Create New", "Create")
+    pour ajouter un nouvel utilisateur dans la liste
+</h4>
 <table class="table">
     <tr>
         <th>
@@ -68,9 +74,9 @@
                 @Html.DisplayFor(modelItem => item.statut)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
-                @Html.ActionLink("Details", "Details", new { id = item.ID }) |
-                @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+                @Html.ActionLink("Modifier", "Edit", new { id = item.ID }) |
+                @Html.ActionLink("Détails", "Details", new { id = item.ID }) |
+                @Html.ActionLink("Supprimer", "Delete", new { id = item.ID })
             </td>
         </tr>
     }

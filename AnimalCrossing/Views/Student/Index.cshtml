@@ -3,52 +3,60 @@
 @{
     ViewBag.Title = "Liste des habitants";
 }
-<br /><br /><br /><br />
-    <div class="jumbotron text-center">
-        <h1>Liste des villageois</h1>
-        <h4>Cliquez sur 
-            @Html.ActionLink("Create New", "Create")
-        pour ajouter un nouveau villageoi dans la liste
-        </h4>
-    </div>
+<br />
+<br />
+<br />
+<br />
+<div class="jumbotron text-center">
+    <h1>Liste des villageois</h1>
+    <h4 class="text-center">
+        @using (Html.BeginForm())
+        {
+            @Html.TextBox("SearchString", null, new { @class = "form-control center-block", @placeholder = "Recherche" })<br>
+            <input type="submit" class="btn" value="Recherche">
+        }
+    </h4>
+</div>
 
+<h4>Cliquez sur @Html.ActionLink("Create New", "Create") pour ajouter un nouveau villageois dans la liste</h4>
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.nomhabitant)
+            Nom de villageois
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.espece)
+            Espèce
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.personnalite)
+            Personnalité
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.genre)
+            Genre
         </th>
         <th>Fonctionnalitées</th>
     </tr>
 
-@foreach (var item in Model) {
-<tr>
-    <td>
-        @Html.DisplayFor(modelItem => item.nomhabitant)
-    </td>
-    <td>
-        @Html.DisplayFor(modelItem => item.espece)
-    </td>
-    <td>
-        @Html.DisplayFor(modelItem => item.personnalite)
-    </td>
-    <td>
-        @Html.DisplayFor(modelItem => item.genre)
-    </td>
-    <td class="gestion">
-        @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
-        @Html.ActionLink("Details", "Details", new { id = item.ID }) |
-        @Html.ActionLink("Delete", "Delete", new { id = item.ID })
-    </td>
-</tr>
-}
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.nomhabitant)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.espece)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.personnalite)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.genre)
+            </td>
+            <td class="gestion">
+                @Html.ActionLink("Modifier", "Edit", new { id = item.ID }) |
+                @Html.ActionLink("Détails", "Details", new { id = item.ID }) |
+                @Html.ActionLink("Supprimer", "Delete", new { id = item.ID })
+            </td>
+        </tr>
+    }
 
 </table>

@@ -50,6 +50,16 @@ p{
     background-color: antiquewhite;
     border-radius: 10px;
     padding: 10px;
+    border-style: inset;
+    border-color: forestgreen;
+
+}
+.cadre2 {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 10px;
+    border-style: inset;
+    border-color: orangered;
 }
 .font{
     background-color: antiquewhite;
@@ -67,12 +77,12 @@ td,th {
 }
 
 tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: #DDF0C9;
     text-align: center;
 }
 
 tr:hover {
-    background-color: silver;
+    background-color: lightskyblue;
     text-align: center;
 }
 
@@ -80,7 +90,7 @@ th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: center;
-    background-color: lightsalmon;
+    background-color: white;
     color: black;
 }
 .gestion{
@@ -88,7 +98,7 @@ th {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .jumbotron {
-    background-color: lightsalmon;
+    background-color: darkorange;
     color: #fff;
 }
 h4{
@@ -116,4 +126,12 @@ h4{
     text-align: center;
     font-family: 'Century Gothic';
 
+}
+p.dashed {
+    border-style: dashed;
+}
+.alerte {
+    text-align: justify;
+    font-family: 'Century Gothic';
+    font-size: 1.25em;
 }

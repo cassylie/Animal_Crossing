@@ -49,8 +49,35 @@ namespace AnimalCrossing.Controllers
         {
             return View("Transfert");
         }
+        public ActionResult ShowInsectesView()
+        {
+            return View("Insectes");
+        }
+        public ActionResult ShowPoissonsView()
+        {
+            return View("poisson");
+        }
+        public ActionResult ShowCrustacesView()
+        {
+            return View("crustace");
+        }
+        public ActionResult ShowArtView()
+        {
+            return View("art");
+        }
+        public ActionResult ShowConditionView()
+        {
+            return View("condition");
+        }
+        public ActionResult ShowFleurView()
+        {
+            return View("fleur");
+        }
 
-
+        public ActionResult ShowIleView()
+        {
+            return View("ile");
+        }
 
     }
 }

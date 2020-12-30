@@ -21,6 +21,10 @@ namespace AnimalCrossing.DAL
                             email = r.email,
                             pseudo=r.pseudo,
                             id_user = r.ID,
+                            ile=r.ile,
+                            hemisphere=r.hemisphere,
+                            statut=r.statut,
+                            fruit=r.fruit,
                         }).FirstOrDefault();
             return logg;
         }

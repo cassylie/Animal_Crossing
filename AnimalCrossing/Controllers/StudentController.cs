@@ -16,9 +16,26 @@ namespace AnimalCrossing.Controllers
         private SchoolContext db = new SchoolContext();
 
         // GET: Student
-        public ActionResult Index()
+     /*  public ActionResult Index()
         {
             return View(db.Students.ToList());
+
+        } */
+        public ActionResult Index(string sortOrder, string searchString)
+        {
+
+            var Student = from s in db.Students
+                                 select s;
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                Student = Student.Where(s => s.nomhabitant.Contains(searchString)
+                                       || s.espece.Contains(searchString)
+                                       || s.personnalite.Contains(searchString)
+                                       || s.genre.Contains(searchString));
+            }
+
+            return View(Student.ToList());
+
         }
 
         // GET: Student/Details/5

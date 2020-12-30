@@ -29,6 +29,10 @@ namespace AnimalCrossing.Controllers
             Session["Email"] = logg.email;
             Session["Pseudo"] = logg.pseudo;
             Session["ID"] = logg.id_user;
+            Session["Ile"] = logg.ile;
+            Session["Hemisphere"] = logg.hemisphere;
+            Session["Statut"] = logg.statut;
+            Session["Fruit"] = logg.fruit;
             return RedirectToAction("Index", "Home");
         }
         public LoginController()

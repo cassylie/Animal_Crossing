@@ -16,9 +16,27 @@ namespace AnimalCrossing.Controllers
         private SchoolContext db = new SchoolContext();
 
         // GET: Utilisateur
-        public ActionResult Index()
+        /*public ActionResult Index()
         {
             return View(db.Utilisateurs.ToList());
+        }*/
+
+        public ActionResult Index(string sortOrder, string searchString)
+        {
+
+            var Utilisateur = from u in db.Utilisateurs
+                          select u;
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                Utilisateur = Utilisateur.Where(u => u.pseudo.Contains(searchString)
+                                       || u.hemisphere.Contains(searchString)
+                                       || u.ile.Contains(searchString)
+                                       || u.email.Contains(searchString)
+                                       || u.fruit.Contains(searchString));
+            }
+
+            return View(Utilisateur.ToList());
+
         }
 
         // GET: Utilisateur/Details/5

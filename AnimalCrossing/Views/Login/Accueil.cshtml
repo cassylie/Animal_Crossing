@@ -32,17 +32,23 @@
                     </p>
                 </div>
                 <div class="alert alert-success fade in">
-                    <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
-                    <p><strong>Hey!</strong></p>
-                    N'oubliez pas de visiter la page "Evenements" pour savoir les nouveautés actuelles, sur le jeu!
+                    <p class="text-center"><strong>Hey!</strong></p>
+                    @if(Session["Email"] != null) {<p>Bonjour @Session["Pseudo"]! Actuellement, vous avez comme statut, le statut de(d') @Session["Statut"].</p> }
                 </div>
                 <p><a href="https://www.youtube.com/watch?v=_3YNL0OWio0">Bande annonce</a></p>
                 <p><a href="https://www.youtube.com/watch?v=fKNpJuNTeRc">Mois de décembre</a></p>
                 <p><a href="https://www.youtube.com/watch?v=51LNWMwFB0E">Yétiti parfait</a></p>
             </div>
             <div class="col-sm-7">
+                <h4>Informations du compte de votre jeu </h4>
+                @if (Session["Email"] != null)
+                {
+                    <p>Pseudo dans le jeu : @Session["Pseudo"]</p><br />
+                    <p>Nom de votre île : @Session["Ile"]</p><br />
+                    <p>Fruit d'origine de votre île : @Session["Fruit"]</p><br />
+                    <p>Hémisphère où est situé votre île : @Session["Hemisphere"]</p>
+                    }
 
-               
             </div>
             <div class="col-sm-2 well">
                 <div class="thumbnail">
