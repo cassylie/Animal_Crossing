@@ -140,3 +140,54 @@ p.dashed {
     font-family: 'Century Gothic';
     font-size: 1.25em;
 }
+.borduretxt{
+    border-style: outset;
+    border-radius: 10px;
+    border-color: aquamarine;
+    background-color: white;
+    font-family: fantasy;
+    font-size: xx-large ;
+    text-align: center;
+}
+.fondpseudo {
+    border-style: solid;
+    border-radius: 10px;
+    border-color: transparent;
+    background: rgba(0, 128, 0, 0.1);
+    background-image: url('../NSwitch_AnimalCrossingNewHorizons_Overview_Paradise_Craft_Char_Player.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-bottom: 10em;
+
+}
+.fondfruit {
+    border-style: solid;
+    border-radius: 10px;
+    border-color: transparent;
+    background: rgba(0, 128, 0, 0.1);
+    background-image: url('../animal-crossing-five-fruits-apple-orange-peach-cherry-pear.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-bottom: 10em;
+}
+.fondile {
+    border-style: solid;
+    border-radius: 10px;
+    border-color: transparent;
+    background: rgba(0, 128, 0, 0.1);
+    background-image: url('../Île_bronzette_icone.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-bottom: 10em;
+}
+.fondhem {
+    border-style: solid;
+    border-radius: 10px;
+    border-color: transparent;
+    background: rgba(0, 128, 0, 0.1);
+    background-image: url('../hemisphere-animal-crossing-new-horizons.jpg');
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-bottom: 10em;
+}
+

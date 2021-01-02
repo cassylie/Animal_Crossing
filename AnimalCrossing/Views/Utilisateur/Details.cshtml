@@ -3,71 +3,63 @@
 @{
     ViewBag.Title = "Details";
 }
-
-<h2>Details</h2>
+<br /><br />
+<h2 class="borduretxt">Détails de l'utilisateur</h2>
 
 <div>
-    <h4>Utilisateur</h4>
     <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.pseudo)
-        </dt>
+ 
+    <table class="table">
+        <tr>
+            <th>
+                Pseudo
+            </th>
+            <th>
+                Adresse e-mail
+            </th>
+            <th>
+                Mot de passe
+            </th>
+            <th>
+                Nom de l'île
+            </th>
+            <th>
+                Hémisphère
+            </th>
+            <th>
+                Fruit d'origine
+            </th>
+            <th>
+                Statut de l'utilisateur
+            </th>
+        </tr>
+        <tr>
+            <td>
+                @Html.DisplayFor(model => model.pseudo)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.email)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.mdp)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.ile)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.hemisphere)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.fruit)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.statut)
+            </td>
+        </tr>
+    </table>
 
-        <dd>
-            @Html.DisplayFor(model => model.pseudo)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.email)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.email)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.mdp)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.mdp)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.ile)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.ile)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.hemisphere)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.hemisphere)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.fruit)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.fruit)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.statut)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.statut)
-        </dd>
-
-    </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Modifier", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Retour à la liste principale", "Index")
 </p>

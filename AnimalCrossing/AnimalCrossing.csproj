@@ -175,6 +175,7 @@
     <Content Include="Albin_NH.png" />
     <Content Include="Anchois.png" />
     <Content Include="animal-crossing-de-nouveaux-changements-pour-le-mois-de-novembre-grande.jpg" />
+    <Content Include="animal-crossing-five-fruits-apple-orange-peach-cherry-pear.png" />
     <Content Include="animal-crossing-new-horizons-nouvelle-mise-a-jour-dhiver-noel-58033-5376.jpg" />
     <Content Include="Animal_crossing.jpg" />
     <Content Include="animal_crossing_fruit_pattern_by_fennellsdesign_da3ubpk-fullview.jpg" />
@@ -376,6 +377,7 @@
     <Content Include="Grand requin blanc.png" />
     <Content Include="gullivarr.png" />
     <Content Include="gulliver.png" />
+    <Content Include="hemisphere-animal-crossing-new-horizons.jpg" />
     <Content Include="hybrides-animal-crossing-new-horizons.png" />
     <Content Include="jac.png" />
     <Content Include="janvier.jpg" />
@@ -393,6 +395,7 @@
     <Content Include="montagne.jpg" />
     <Content Include="morris.png" />
     <Content Include="NSwitch_AnimalCrossingNewHorizons_Islandlife_NookPhone_Char_Left.png" />
+    <Content Include="NSwitch_AnimalCrossingNewHorizons_Overview_Paradise_Craft_Char_Player.png" />
     <Content Include="pascale.png" />
     <Content Include="peche.png" />
     <Content Include="plage.jpg" />
@@ -423,6 +426,7 @@
     <Content Include="Toile commune Des glaneuses, de Jean-François Millet.png" />
     <Content Include="Toile célèbre La Joconde, de Léonard de Vinci.png" />
     <Content Include="yetiti.jpg" />
+    <Content Include="Île_bronzette_icone.png" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />

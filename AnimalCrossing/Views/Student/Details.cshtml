@@ -3,48 +3,41 @@
 @{
     ViewBag.Title = "Details";
 }
+<br />
+<br />
+<h2 class="borduretxt">Détails du personnage</h2>
 
-<h2>Detail</h2>
-
-<div>
-
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.nomhabitant)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.nomhabitant)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.espece)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.espece)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.personnalite)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.personnalite)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.genre)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.genre)
-        </dd>
-
-    </dl>
-</div>
+<table class="table">
+    <tr>
+        <th>
+            Nom de villageois
+        </th>
+        <th>
+            Espèce
+        </th>
+        <th>
+            Personnalité
+        </th>
+        <th>
+            Genre
+        </th>
+    </tr>
+        <tr>
+            <td>
+                @Html.DisplayFor(model => model.nomhabitant)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.espece)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.personnalite)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.genre)
+            </td>
+        </tr>
+    </table>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Modifier", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Retour à la liste principale", "Index")
 </p>

@@ -1,8 +1,8 @@
 ﻿@{
     ViewBag.Title = "Index";
 }
-
-<form class="form-horizontal" action="/action_page.php">
+<!--
+    <form class="form-horizontal" action="/action_page.php">
     <div class="form-group">
         <label class="control-label col-sm-2" for="email">Email:</label>
         <div class="col-sm-10">
@@ -21,3 +21,24 @@
         </div>
     </div>
 </form>
+    -->
+
+     <div class="container-fluid">
+    <h3 class="borduretxt">Formulaire de connexion pour les gestionnaires du blog</h3>
+<form class="form-horizontal center-block" action="/action_page.php">
+    <div class="input-group col-sm-10 ">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+        <input type="text" class="form-control" id="login-username" placeholder="Adresse email" name="loginUsername">
+    </div>
+    <div class="input-group col-sm-10">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+        <input type="password" class="form-control" id="login-password" placeholder="Mot de passe" name="loginPassword">
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" id="login" class="btn font-weight-bold bg-success text-dark text-capitalize" value="Se connecter">CONNEXION</button>
+        </div>
+    </div>
+</form>
+</div>
+
